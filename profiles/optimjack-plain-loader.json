@@ -1,0 +1,18 @@
+{
+ "name": "OPTIMJACK, plain loader only: a <script> for track.js, as most infected snippets carried",
+ "source": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
+ "notes": [
+  "Report URI saw three loader versions: a plain <script> (most snippets), the same URL hidden in base64 (same browser request) and a full inline copy run through eval(). This profile leaves the inline copy out, so it shows what a site faced if its snippet carried only the first two."
+ ],
+ "loader": {
+  "scripts": ["https://1688360.cc/track.js"],
+  "fallbacks": []
+ },
+ "theft": {
+  "connect": ["https://1688360.cc/card.php", "https://1688360.cc/hit.php"]
+ },
+ "extra": {
+  "scripts": ["https://5vobauua3ojpklx.icu/boot.js", "https://eil786npto9u5bq.icu/boot.js"],
+  "frames": ["https://eil786npto9u5bq.icu/A8/a.html"]
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "name": "OPTIMJACK: code injected into Optimizely Web Experimentation snippets, 16 November 2026",
+ "source": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
+ "notes": [
+  "Stages as Report URI evaluated them: load track.js from 1688360.cc, or run the inline fallback (needs 'unsafe-eval' or 'unsafe-inline'); send stolen data to 1688360.cc (connect-src); load the iOS kit (script-src, frame-src).",
+  "The loader is created by the trusted snippet with document.createElement('script'), so it is not parser-inserted and 'strict-dynamic' trusts it.",
+  "The attacker hosts are taken down; they appear here only as addresses a policy is asked about. Nothing is fetched from them."
+ ],
+ "loader": {
+  "scripts": ["https://1688360.cc/track.js"],
+  "fallbacks": ["eval", "inline"]
+ },
+ "theft": {
+  "connect": ["https://1688360.cc/card.php", "https://1688360.cc/hit.php"]
+ },
+ "extra": {
+  "scripts": ["https://5vobauua3ojpklx.icu/boot.js", "https://eil786npto9u5bq.icu/boot.js"],
+  "frames": ["https://eil786npto9u5bq.icu/A8/a.html"]
+ }
+}
